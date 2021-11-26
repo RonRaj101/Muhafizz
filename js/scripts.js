@@ -25,17 +25,3 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-var fonts = ["'Brush Script MT', cursive","Garamond, serif","Trebuchet MS, sans-serif"];
-var counter = 0;
-var elem = document.getElementById("changeText");
-var inst = setInterval(change, 500);
-
-function change() {
-  elem.style.fontFamily = fonts[counter];
-  counter++;
-  if (counter >= fonts.length) {
-    counter = 0;
-    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
-  }
-}
